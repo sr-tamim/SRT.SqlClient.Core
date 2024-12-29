@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>SRT.SqlClient</Title>
+    <PackageId>SRT.SqlClient</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>sr.tamim</Authors>
+    <Company>SR Tamim</Company>
+    <Description>A simple sql client to make transactions easier</Description>
+    <PackageTags>sql;sqlclient;database;dbclient;orm;srt.sqlclient;srt;tamim;</PackageTags>
+    <RepositoryUrl>https://github.com/sr-tamim/SRT.SqlClient.Core</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/sr-tamim/SRT.SqlClient.Core</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+
+</Project>
