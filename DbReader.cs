@@ -5,15 +5,23 @@ namespace SRT.SqlClient
     public class DbReader : IDisposable
     {
         private bool disposed = false;
+        private readonly string connectionString = string.Empty;
         private SqlConnection? connection;
 
         public DbReader()
-        { }
+        {
+            connectionString = DbConnection.ConnectionString;
+        }
+
+        public DbReader(string connectionString)
+        {
+            this.connectionString = connectionString;
+        }
 
         // Open the connection
         private void OpenConnection()
         {
-            connection ??= new SqlConnection(DbConnection.ConnectionString);   // Create the connection if it is null
+            connection ??= new SqlConnection(connectionString);   // Create the connection if it is null
             // Open the connection if it is closed
             if (connection != null && connection.State == System.Data.ConnectionState.Closed)
                 connection.Open();
