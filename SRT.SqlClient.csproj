@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>SRT.SqlClient</Title>
     <PackageId>SRT.SqlClient</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>sr.tamim</Authors>
     <Company>SR Tamim</Company>
     <Description>A simple sql client to make transactions easier</Description>
